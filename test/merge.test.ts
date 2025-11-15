@@ -1,7 +1,7 @@
 import { merge } from "../src/merge";
 
 describe("merge()", () => {
-  test("should merge correctly", () => {
+  test("test1", () => {
     const col1 = [1, 3, 5];
     const col2 = [9, 7, 4]; 
     const col3 = [2, 6, 8];
@@ -12,7 +12,7 @@ describe("merge()", () => {
     expect(result).toEqual([1,2,3,4,5,6,7,8,9]);
   });
 
-  test("should handle empty arrays", () => {
+  test("test2", () => {
     const col1: number[] = [];
     const col2: number[] = [];
     const col3: number[] = [];
@@ -21,7 +21,7 @@ describe("merge()", () => {
     expect(result).toEqual([]);
   });
 
-  test("should handle arrays with one element each", () => {
+  test("test3", () => {
     const col1 = [1];
     const col2 = [2];  
     const col3 = [3];
@@ -30,7 +30,7 @@ describe("merge()", () => {
     expect(result).toEqual([1,2,3]);
   });
 
-  test("should handle arrays with overlapping numbers", () => {
+  test("test4", () => {
     const col1 = [1, 3, 5, 9];
     const col2 = [5, 4, 3];
     const col3 = [2, 3];
