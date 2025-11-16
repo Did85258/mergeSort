@@ -23,11 +23,11 @@ describe("merge()", () => {
 
   test("test3", () => {
     const col1 = [1];
-    const col2 = [2];  
+    const col2: number[] = [];  
     const col3 = [3];
     const result = merge(col1, col2, col3);
     // console.log(result)
-    expect(result).toEqual([1,2,3]);
+    expect(result).toEqual([1,3]);
   });
 
   test("test4", () => {

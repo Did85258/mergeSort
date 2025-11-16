@@ -39,12 +39,10 @@ function mergeThree(arr1: number[], arr2: number[], arr3: number[]): number[] {
     if (a <= b && a <= c) {
       result.push(a);
       i++;
-    }
-    if (b <= a && b <= c) {
+    } else if (b <= a && b <= c) {
       result.push(b);
       j++;
-    }
-    if (c <= a && c <= b) {
+    } else if (c <= a && c <= b) {
       result.push(c);
       k++;
     }
